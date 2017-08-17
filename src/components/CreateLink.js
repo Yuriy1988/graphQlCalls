@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {graphql, gql} from 'react-apollo';
-import { ALL_LINKS_QUERY } from './LinkList'
+import { ALL_LINKS_QUERY } from './Contacts/Contacts'
 import { GC_USER_ID, LINKS_PER_PAGE } from '../constants'
 
 class CreateLink extends Component {
