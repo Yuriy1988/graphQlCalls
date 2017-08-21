@@ -79,9 +79,7 @@ module.exports = {
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             query: {
-              plugins: () => [
-                require('babel-plugin-transform-decorators-legacy'),
-              ],
+              plugins: ['transform-decorators-legacy'],
               cacheDirectory: true
             },
           },

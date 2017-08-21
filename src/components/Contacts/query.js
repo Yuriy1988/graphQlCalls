@@ -1,7 +1,7 @@
 import {gql} from 'react-apollo';
 
 export const ALL_CONTACTS_QUERY = gql`
-  query AllLinksQuery {
+  query Contacts {
     allContacts {
       id
       name

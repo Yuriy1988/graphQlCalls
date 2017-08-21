@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {graphql, compose} from 'react-apollo';
-import { ALL_CONTACTS_QUERY, CONTACT_CALLS_QUERY } from './query';
+import { graphql } from 'react-apollo';
+import { ALL_CONTACTS_QUERY } from './query';
 import Calls from '../Calls/Calls';
 
 class ContactsList extends Component {
@@ -12,8 +12,11 @@ class ContactsList extends Component {
     this.setState({ callId })
   };
 
+  handleClick = () => {
+    this.props.history.push(`/test`)
+  };
+
   render() {
-    console.log(this.props);
     if (this.props.contacts && this.props.contacts.loading) {
       return <div>Loading</div>
     }
@@ -25,6 +28,7 @@ class ContactsList extends Component {
     const contacts = this.props.contacts.allContacts;
     return (
       <div>
+        <button onClick={this.handleClick}>Test</button>
         total contacts: {this.props.contacts._allContactsMeta.count}
         {contacts.map((c) => (
           <div key={c.id} style={{ border: '1px solid green' }}>
