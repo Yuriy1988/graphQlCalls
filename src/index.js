@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 import { ApolloProvider, createNetworkInterface, ApolloClient } from 'react-apollo'
+// import { Provider } from 'react-redux';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import { GC_AUTH_TOKEN } from './constants'
 import { SubscriptionClient, addGraphQLSubscriptions } from 'subscriptions-transport-ws'
+import configureStore from './configure-store';
 import './styles/index.css';
+
+const store = configureStore();
 
 const networkInterface = createNetworkInterface({
     uri: 'https://api.graph.cool/simple/v1/cj6dmo8bm39lt0121yi49cl6a'
@@ -40,11 +44,11 @@ const client = new ApolloClient({
 });
 
 ReactDOM.render(
-  <BrowserRouter>
-    <ApolloProvider client={client}>
-      <App />
-    </ApolloProvider>
-  </BrowserRouter>
+    <BrowserRouter>
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>
+    </BrowserRouter>
   , document.getElementById('root')
 );
 registerServiceWorker();
