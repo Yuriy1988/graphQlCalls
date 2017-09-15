@@ -10,6 +10,9 @@ import { SubscriptionClient, addGraphQLSubscriptions } from 'subscriptions-trans
 import DevTools from './dev-tools';
 import configureStore from './configure-store';
 import './styles/index.css';
+import {gql} from 'react-apollo';
+
+window.gql = gql;
 
 const store = configureStore();
 const networkInterface = createNetworkInterface({
@@ -41,9 +44,12 @@ networkInterface.use([{
 
 const client = new ApolloClient({
   dataIdFromObject: o => o.id,
-  networkInterface: networkInterfaceWithSubscriptions
+  networkInterface: networkInterfaceWithSubscriptions,
+  queryDeduplication: false,
 });
+
 window.client = client;
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

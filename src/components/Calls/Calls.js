@@ -4,7 +4,6 @@ import { CONTACT_CALLS_QUERY } from './query';
 
 class Calls extends Component {
   render() {
-    console.log(1, this.props);
     const { calls } = this.props;
 
     if (calls && calls.loading) {
@@ -14,7 +13,6 @@ class Calls extends Component {
     if (calls && calls.error) {
       return <div>Error</div>
     }
-
     return (
       <div>
         <div>
@@ -59,7 +57,7 @@ class Calls extends Component {
 
 export default graphql(CONTACT_CALLS_QUERY, {
     name: 'calls',
-    options: ({ callid }) => ({ variables: { id: callid } }),
+    options: (props) => ({ variables: { id: props.match.params.id } }),
 })(Calls);
 
 

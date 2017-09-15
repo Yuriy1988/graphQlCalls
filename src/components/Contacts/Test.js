@@ -1,27 +1,13 @@
 import React, { Component } from 'react'
-import { gql, withApollo } from 'react-apollo';
+import { gql, graphql } from 'react-apollo';
 
-@withApollo
 class Test extends Component {
   handleClick = () => {
     this.props.history.push(`/`)
   };
 
   render() {
-    const { client } = this.props;
 
-    const todo = client.readFragment({
-      id: "cj6ggo02rg9mw0156qu8xvmze",
-      fragment: gql`
-        fragment contact on Contact {
-          id
-          name,
-          age
-        }
-      `,
-    });
-
-    console.log('todo', todo);
     return (
       <div>
         HI
@@ -30,5 +16,12 @@ class Test extends Component {
     )
   }
 }
-export default Test;
 
+export default graphql(gql`
+  query Contacts {
+    Contact(id: "cj6ggo02rg9mw0156qu8xvmze") {
+      id
+      name
+    }
+  }
+`)(Test);

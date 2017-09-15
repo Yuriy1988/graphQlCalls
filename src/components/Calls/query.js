@@ -17,7 +17,7 @@ export const CONTACT_CALLS_QUERY = gql`
       _executedCallsMeta {
         count
       }
-      recievedCalls{
+      recievedCalls {
         id
         started
         finished

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Contacts from './Contacts/Contacts';
+import Calls from './Calls/Calls';
 import Test from './Contacts/Test';
 
 import '../styles/App.css';
@@ -14,6 +15,7 @@ class App extends Component {
             <Route exact path='/test' component={Test} />
             <Route exact path='/' render={() => <Redirect to='/contacts' />} />
             <Route exact path='/contacts' component={Contacts} />
+            <Route exact path='/calls/:id' component={Calls} />
           </Switch>
         </div>
       </div>
