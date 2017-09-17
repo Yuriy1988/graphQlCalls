@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { gql, graphql } from 'react-apollo';
+import { gql, graphql, withApollo } from 'react-apollo';
+import { ALL_CONTACTS_QUERY } from './query';
 
 class Test extends Component {
   handleClick = () => {
@@ -7,7 +8,9 @@ class Test extends Component {
   };
 
   render() {
-
+    window.a = this.props;
+    window.b = ALL_CONTACTS_QUERY
+    // console.log(this.props.client.readQuery({ ALL_CONTACTS_QUERY }));
     return (
       <div>
         HI
@@ -17,11 +20,14 @@ class Test extends Component {
   }
 }
 
-export default graphql(gql`
-  query Contacts {
-    Contact(id: "cj6ggo02rg9mw0156qu8xvmze") {
+Test.fragments = {
+  entry: gql`
+    fragment Test on Contact {
+      city
       id
-      name
     }
-  }
-`)(Test);
+  `,
+};
+
+export default withApollo(Test);
+

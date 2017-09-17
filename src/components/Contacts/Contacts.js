@@ -1,12 +1,28 @@
 import React, { Component } from 'react';
-import { graphql } from 'react-apollo';
+import { graphql, gql } from 'react-apollo';
 import { Link } from 'react-router-dom'
 import { ALL_CONTACTS_QUERY } from './query';
-import Calls from '../Calls/Calls';
 
 class ContactsList extends Component {
+  state = {
+    name: {}
+  };
+
+  handleChange(id, e) {
+    console.log(id);
+    this.setState({ name: {
+      ...this.state.name,
+      [id]: e.target.value,
+    }});
+  }
+
+  mutate(id, name) {
+    this.props.mutate({
+      variables: { id, name: name[id] }
+    });
+  }
+
   render() {
-    console.log(this.props)
     if (this.props.contacts && this.props.contacts.loading) {
       return <div>Loading</div>
     }
@@ -27,6 +43,10 @@ class ContactsList extends Component {
             <div>City: {c.city}</div>
             <div>Apt: {c.apt}</div>
             <Link to={`/calls/${c.id}`}>{c.name} Calls</Link>
+            <div>
+              <input value={this.state.name[c.id]} onChange={this.handleChange.bind(this, c.id)} />
+              <button onClick={this.mutate.bind(this, c.id, this.state.name)}>Change Name</button>
+            </div>
           </div>
         ))}
       </div>
@@ -34,4 +54,14 @@ class ContactsList extends Component {
   }
 }
 
-export default graphql(ALL_CONTACTS_QUERY, { name: 'contacts' })(ContactsList)
+const changeName = gql`
+  mutation update($id: ID!, $name: String!) {
+    updateContact(id:$id, name:$name) {
+      id
+      createdAt
+      name
+    }
+  }
+`;
+
+export default graphql(changeName)(graphql(ALL_CONTACTS_QUERY, { name: 'contacts' })(ContactsList))

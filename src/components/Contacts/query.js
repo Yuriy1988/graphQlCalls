@@ -40,36 +40,3 @@ export const ALL_CONTACTS_QUERY = gql`
     }
   }
 `;
-
-export const CONTACT_CALLS_QUERY = gql`
-  query Contact($id: ID!) {
-    Contact(id: $id) {
-      executedCalls{
-        started
-        finished
-        caller {
-          name
-        }
-        recipient {
-          name
-        }
-      }
-      _executedCallsMeta {
-        count
-      }
-      recievedCalls{
-        started
-        finished
-        caller {
-          name
-        }
-        recipient {
-          name
-        }
-      }
-      _recievedCallsMeta {
-        count
-      }
-    }
-  }
-`;

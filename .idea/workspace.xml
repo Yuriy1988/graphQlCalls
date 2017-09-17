@@ -4,12 +4,9 @@
     <list default="true" id="4f4f87bf-29f7-4802-be83-9071a6adb5ef" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/App.js" afterPath="$PROJECT_DIR$/src/components/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Calls/Calls.js" afterPath="$PROJECT_DIR$/src/components/Calls/Calls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Calls/query.js" afterPath="$PROJECT_DIR$/src/components/Calls/query.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Contacts/Contacts.js" afterPath="$PROJECT_DIR$/src/components/Contacts/Contacts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Contacts/Test.js" afterPath="$PROJECT_DIR$/src/components/Contacts/Test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Contacts/query.js" afterPath="$PROJECT_DIR$/src/components/Contacts/query.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,150 +19,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-              <folding>
-                <marker date="1505481716909" expanded="true" signature="1765:1768" ph="&lt;Provider/&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Contacts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Contacts/Contacts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configure-store.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/configure-store.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/constants.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calls.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Calls/Calls.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Calls/query.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="19" />
-              <folding>
-                <marker date="1504709476455" expanded="true" signature="77:554" ph="query...{&#10;    Contact(id: $id) {&#10;      executedCalls{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _executedCallsMeta {&#10;        count&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _recievedCallsMeta {&#10;        count&#10;      }&#10;    }&#10;  }" />
-                <marker date="1504709476455" expanded="true" signature="83:90" ph="Contact...Contact" />
-                <marker date="1504709476455" expanded="true" signature="90:100" ph="(...)" />
-                <marker date="1504709476455" expanded="true" signature="96:98" ph="ID...ID" />
-                <marker date="1504709476455" expanded="true" signature="101:554" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="107:114" ph="Contact...Contact" />
-                <marker date="1504709476455" expanded="true" signature="107:550" ph="Contact...{&#10;      executedCalls{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _executedCallsMeta {&#10;        count&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _recievedCallsMeta {&#10;        count&#10;      }&#10;    }" />
-                <marker date="1504709476455" expanded="true" signature="114:123" ph="(...)" />
-                <marker date="1504709476455" expanded="true" signature="115:117" ph="id...id" />
-                <marker date="1504709476455" expanded="true" signature="124:550" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="132:145" ph="executedCalls...executedCalls" />
-                <marker date="1504709476455" expanded="true" signature="132:285" ph="executedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
-                <marker date="1504709476455" expanded="true" signature="145:285" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="155:157" ph="id...id" />
-                <marker date="1504709476455" expanded="true" signature="166:173" ph="started...started" />
-                <marker date="1504709476455" expanded="true" signature="182:190" ph="finished...finished" />
-                <marker date="1504709476455" expanded="true" signature="199:205" ph="caller...caller" />
-                <marker date="1504709476455" expanded="true" signature="199:232" ph="caller...{&#10;          name&#10;        }" />
-                <marker date="1504709476455" expanded="true" signature="206:232" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="218:222" ph="name...name" />
-                <marker date="1504709476455" expanded="true" signature="241:250" ph="recipient...recipient" />
-                <marker date="1504709476455" expanded="true" signature="241:277" ph="recipient...{&#10;          name&#10;        }" />
-                <marker date="1504709476455" expanded="true" signature="251:277" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="263:267" ph="name...name" />
-                <marker date="1504709476455" expanded="true" signature="292:310" ph="_executedCallsMeta..._executedCallsMeta" />
-                <marker date="1504709476455" expanded="true" signature="292:334" ph="_executedCallsMeta...{&#10;        count&#10;      }" />
-                <marker date="1504709476455" expanded="true" signature="311:334" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="321:326" ph="count...count" />
-                <marker date="1504709476455" expanded="true" signature="341:354" ph="recievedCalls...recievedCalls" />
-                <marker date="1504709476455" expanded="true" signature="341:495" ph="recievedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
-                <marker date="1504709476455" expanded="true" signature="355:495" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="365:367" ph="id...id" />
-                <marker date="1504709476455" expanded="true" signature="376:383" ph="started...started" />
-                <marker date="1504709476455" expanded="true" signature="392:400" ph="finished...finished" />
-                <marker date="1504709476455" expanded="true" signature="409:415" ph="caller...caller" />
-                <marker date="1504709476455" expanded="true" signature="409:442" ph="caller...{&#10;          name&#10;        }" />
-                <marker date="1504709476455" expanded="true" signature="416:442" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="428:432" ph="name...name" />
-                <marker date="1504709476455" expanded="true" signature="451:460" ph="recipient...recipient" />
-                <marker date="1504709476455" expanded="true" signature="451:487" ph="recipient...{&#10;          name&#10;        }" />
-                <marker date="1504709476455" expanded="true" signature="461:487" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="473:477" ph="name...name" />
-                <marker date="1504709476455" expanded="true" signature="502:520" ph="_recievedCallsMeta..._recievedCallsMeta" />
-                <marker date="1504709476455" expanded="true" signature="502:544" ph="_recievedCallsMeta...{&#10;        count&#10;      }" />
-                <marker date="1504709476455" expanded="true" signature="521:544" ph="{...}" />
-                <marker date="1504709476455" expanded="true" signature="531:536" ph="count...count" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Contacts/Test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <marker date="1504709482270" expanded="true" signature="116:181" ph="{...}" />
-                <marker date="1504709482270" expanded="true" signature="348:441" ph="query...{&#10;    Contact(id: &quot;cj6ggo02rg9mw0156qu8xvmze&quot;) {&#10;      id&#10;      name&#10;    }&#10;  }" />
-                <marker date="1504709482270" expanded="true" signature="354:362" ph="Contacts...Contacts" />
-                <marker date="1504709482270" expanded="true" signature="363:441" ph="{...}" />
-                <marker date="1504709482270" expanded="true" signature="369:376" ph="Contact...Contact" />
-                <marker date="1504709482270" expanded="true" signature="369:437" ph="Contact...{&#10;      id&#10;      name&#10;    }" />
-                <marker date="1504709482270" expanded="true" signature="376:409" ph="(...)" />
-                <marker date="1504709482270" expanded="true" signature="377:379" ph="id...id" />
-                <marker date="1504709482270" expanded="true" signature="410:437" ph="{...}" />
-                <marker date="1504709482270" expanded="true" signature="418:420" ph="id...id" />
-                <marker date="1504709482270" expanded="true" signature="427:431" ph="name...name" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -190,9 +46,11 @@
       <find>apolloC</find>
       <find>client</find>
       <find>networkInterface</find>
-      <find>apollo</find>
       <find>networ</find>
       <find>_executedCallsMeta</find>
+      <find>react-apoll</find>
+      <find>apollo</find>
+      <find>CONTACT_CALLS_QUERY</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -228,12 +86,12 @@
         <option value="$PROJECT_DIR$/src/configure-store.js" />
         <option value="$PROJECT_DIR$/src/dev-tools.js" />
         <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
-        <option value="$PROJECT_DIR$/src/components/Contacts/query.js" />
-        <option value="$PROJECT_DIR$/src/components/Contacts/Test.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/Calls/Calls.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/Contacts/query.js" />
+        <option value="$PROJECT_DIR$/src/components/Contacts/Test.js" />
         <option value="$PROJECT_DIR$/src/components/Contacts/Contacts.js" />
       </list>
     </option>
@@ -256,9 +114,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-57" />
-    <option name="y" value="24" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -417,55 +275,117 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="hackernews-react-apollo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackernews-react-apollo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hackernews-react-apollo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackernews-react-apollo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hackernews-react-apollo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackernews-react-apollo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hackernews-react-apollo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackernews-react-apollo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Calls" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Contacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphQlCalls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Calls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-for-students2" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="com.intellij.lang.jsgraphql.ide.injection.JSGraphQLLanguageInjectionUtil.gql" value="apollo" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Yuriy_Tataryntsev\Documents\myProjects\hackernews-react-apollo\src\components\Contacts" />
-      <recent name="C:\Users\Yuriy_Tataryntsev\Documents\myProjects\hackernews-react-apollo\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JavaScript\graphQlCalls\src\components" />
       <recent name="C:\Users\Yuriy_Tataryntsev\Documents\myProjects\hackernews-react-apollo\src\components\Contacts" />
       <recent name="C:\Users\Yuriy_Tataryntsev\Documents\myProjects\hackernews-react-apollo\src" />
       <recent name="C:\Users\Yuriy_Tataryntsev\Documents\myProjects\hackernews-react-apollo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yuriy_Tataryntsev\Documents\myProjects\hackernews-react-apollo\src\components\Contacts" />
+      <recent name="C:\Users\Yuriy_Tataryntsev\Documents\myProjects\hackernews-react-apollo\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -479,6 +399,74 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -501,41 +489,42 @@
       <workItem from="1503386181959" duration="15000" />
       <workItem from="1503907244007" duration="703000" />
       <workItem from="1505477103110" duration="5046000" />
+      <workItem from="1505572755054" duration="8551000" />
+      <workItem from="1505650900504" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54825000" />
+    <option name="totallyTimeSpent" value="63395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1270903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -545,88 +534,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CreateLink.js" />
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="89" lean-forward="false" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <marker date="1505481716909" expanded="true" signature="1765:1768" ph="&lt;Provider/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphql.config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/registerServiceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="71" lean-forward="false" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts/scripts/eject.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts/scripts/init.js" />
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -637,13 +544,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts/scripts/build.js" />
-    <entry file="file://$PROJECT_DIR$/project.graphcool">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -664,7 +564,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -738,193 +637,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Contacts/query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <marker date="1503326684657" expanded="true" signature="76:586" ph="query...{&#10;    allContacts {&#10;      id&#10;      name&#10;      age&#10;      country&#10;      city&#10;      apt&#10;      executedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;    }&#10;    _allContactsMeta {&#10;      count&#10;    }&#10;    _allCallsMeta {&#10;      count&#10;    }&#10;  }" />
-            <marker date="1503326684657" expanded="true" signature="82:90" ph="Contacts...Contacts" />
-            <marker date="1503326684657" expanded="true" signature="91:586" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="97:108" ph="allContacts...allContacts" />
-            <marker date="1503326684657" expanded="true" signature="97:503" ph="allContacts...{&#10;      id&#10;      name&#10;      age&#10;      country&#10;      city&#10;      apt&#10;      executedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;    }" />
-            <marker date="1503326684657" expanded="true" signature="109:503" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="117:119" ph="id...id" />
-            <marker date="1503326684657" expanded="true" signature="126:130" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="137:140" ph="age...age" />
-            <marker date="1503326684657" expanded="true" signature="147:154" ph="country...country" />
-            <marker date="1503326684657" expanded="true" signature="161:165" ph="city...city" />
-            <marker date="1503326684657" expanded="true" signature="172:175" ph="apt...apt" />
-            <marker date="1503326684657" expanded="true" signature="182:195" ph="executedCalls...executedCalls" />
-            <marker date="1503326684657" expanded="true" signature="182:336" ph="executedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
-            <marker date="1503326684657" expanded="true" signature="196:336" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="206:208" ph="id...id" />
-            <marker date="1503326684657" expanded="true" signature="217:224" ph="started...started" />
-            <marker date="1503326684657" expanded="true" signature="233:241" ph="finished...finished" />
-            <marker date="1503326684657" expanded="true" signature="250:256" ph="caller...caller" />
-            <marker date="1503326684657" expanded="true" signature="250:283" ph="caller...{&#10;          name&#10;        }" />
-            <marker date="1503326684657" expanded="true" signature="257:283" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="269:273" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="292:301" ph="recipient...recipient" />
-            <marker date="1503326684657" expanded="true" signature="292:328" ph="recipient...{&#10;          name&#10;        }" />
-            <marker date="1503326684657" expanded="true" signature="302:328" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="314:318" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="343:356" ph="recievedCalls...recievedCalls" />
-            <marker date="1503326684657" expanded="true" signature="343:497" ph="recievedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
-            <marker date="1503326684657" expanded="true" signature="357:497" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="367:369" ph="id...id" />
-            <marker date="1503326684657" expanded="true" signature="378:385" ph="started...started" />
-            <marker date="1503326684657" expanded="true" signature="394:402" ph="finished...finished" />
-            <marker date="1503326684657" expanded="true" signature="411:417" ph="caller...caller" />
-            <marker date="1503326684657" expanded="true" signature="411:444" ph="caller...{&#10;          name&#10;        }" />
-            <marker date="1503326684657" expanded="true" signature="418:444" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="430:434" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="453:462" ph="recipient...recipient" />
-            <marker date="1503326684657" expanded="true" signature="453:489" ph="recipient...{&#10;          name&#10;        }" />
-            <marker date="1503326684657" expanded="true" signature="463:489" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="475:479" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="508:524" ph="_allContactsMeta..._allContactsMeta" />
-            <marker date="1503326684657" expanded="true" signature="508:544" ph="_allContactsMeta...{&#10;      count&#10;    }" />
-            <marker date="1503326684657" expanded="true" signature="525:544" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="533:538" ph="count...count" />
-            <marker date="1503326684657" expanded="true" signature="549:562" ph="_allCallsMeta..._allCallsMeta" />
-            <marker date="1503326684657" expanded="true" signature="549:582" ph="_allCallsMeta...{&#10;      count&#10;    }" />
-            <marker date="1503326684657" expanded="true" signature="563:582" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="571:576" ph="count...count" />
-            <marker date="1503326684657" expanded="true" signature="633:1087" ph="query...{&#10;    Contact(id: $id) {&#10;      executedCalls{&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _executedCallsMeta {&#10;        count&#10;      }&#10;      recievedCalls{&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _recievedCallsMeta {&#10;        count&#10;      }&#10;    }&#10;  }" />
-            <marker date="1503326684657" expanded="true" signature="639:646" ph="Contact...Contact" />
-            <marker date="1503326684657" expanded="true" signature="646:656" ph="(...)" />
-            <marker date="1503326684657" expanded="true" signature="652:654" ph="ID...ID" />
-            <marker date="1503326684657" expanded="true" signature="657:1087" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="663:670" ph="Contact...Contact" />
-            <marker date="1503326684657" expanded="true" signature="663:1083" ph="Contact...{&#10;      executedCalls{&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _executedCallsMeta {&#10;        count&#10;      }&#10;      recievedCalls{&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _recievedCallsMeta {&#10;        count&#10;      }&#10;    }" />
-            <marker date="1503326684657" expanded="true" signature="670:679" ph="(...)" />
-            <marker date="1503326684657" expanded="true" signature="671:673" ph="id...id" />
-            <marker date="1503326684657" expanded="true" signature="680:1083" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="688:701" ph="executedCalls...executedCalls" />
-            <marker date="1503326684657" expanded="true" signature="688:830" ph="executedCalls...{&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
-            <marker date="1503326684657" expanded="true" signature="701:830" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="711:718" ph="started...started" />
-            <marker date="1503326684657" expanded="true" signature="727:735" ph="finished...finished" />
-            <marker date="1503326684657" expanded="true" signature="744:750" ph="caller...caller" />
-            <marker date="1503326684657" expanded="true" signature="744:777" ph="caller...{&#10;          name&#10;        }" />
-            <marker date="1503326684657" expanded="true" signature="751:777" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="763:767" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="786:795" ph="recipient...recipient" />
-            <marker date="1503326684657" expanded="true" signature="786:822" ph="recipient...{&#10;          name&#10;        }" />
-            <marker date="1503326684657" expanded="true" signature="796:822" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="808:812" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="837:855" ph="_executedCallsMeta..._executedCallsMeta" />
-            <marker date="1503326684657" expanded="true" signature="837:879" ph="_executedCallsMeta...{&#10;        count&#10;      }" />
-            <marker date="1503326684657" expanded="true" signature="856:879" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="866:871" ph="count...count" />
-            <marker date="1503326684657" expanded="true" signature="886:899" ph="recievedCalls...recievedCalls" />
-            <marker date="1503326684657" expanded="true" signature="886:1028" ph="recievedCalls...{&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
-            <marker date="1503326684657" expanded="true" signature="899:1028" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="909:916" ph="started...started" />
-            <marker date="1503326684657" expanded="true" signature="925:933" ph="finished...finished" />
-            <marker date="1503326684657" expanded="true" signature="942:948" ph="caller...caller" />
-            <marker date="1503326684657" expanded="true" signature="942:975" ph="caller...{&#10;          name&#10;        }" />
-            <marker date="1503326684657" expanded="true" signature="949:975" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="961:965" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="984:993" ph="recipient...recipient" />
-            <marker date="1503326684657" expanded="true" signature="984:1020" ph="recipient...{&#10;          name&#10;        }" />
-            <marker date="1503326684657" expanded="true" signature="994:1020" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="1006:1010" ph="name...name" />
-            <marker date="1503326684657" expanded="true" signature="1035:1053" ph="_recievedCallsMeta..._recievedCallsMeta" />
-            <marker date="1503326684657" expanded="true" signature="1035:1077" ph="_recievedCallsMeta...{&#10;        count&#10;      }" />
-            <marker date="1503326684657" expanded="true" signature="1054:1077" ph="{...}" />
-            <marker date="1503326684657" expanded="true" signature="1064:1069" ph="count...count" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/apollo-fetch/dist/apollo-fetch.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/apollo-fetch/dist/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/apollo-link-http/lib/httpLink.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <marker date="1505477416111" expanded="true" signature="98:105" ph="{&quot;react&quot;: &quot;^15.6.1&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-fetch/dist/apollo-fetch.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-fetch/dist/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-link-http/lib/httpLink.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/apollo-client/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-306">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/apollo-cache-inmemory/src/inMemoryCache.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/apollo-cache-inmemory/lib/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Contacts/Test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <marker date="1504709482270" expanded="true" signature="116:181" ph="{...}" />
-            <marker date="1504709482270" expanded="true" signature="348:441" ph="query...{&#10;    Contact(id: &quot;cj6ggo02rg9mw0156qu8xvmze&quot;) {&#10;      id&#10;      name&#10;    }&#10;  }" />
-            <marker date="1504709482270" expanded="true" signature="354:362" ph="Contacts...Contacts" />
-            <marker date="1504709482270" expanded="true" signature="363:441" ph="{...}" />
-            <marker date="1504709482270" expanded="true" signature="369:376" ph="Contact...Contact" />
-            <marker date="1504709482270" expanded="true" signature="369:437" ph="Contact...{&#10;      id&#10;      name&#10;    }" />
-            <marker date="1504709482270" expanded="true" signature="376:409" ph="(...)" />
-            <marker date="1504709482270" expanded="true" signature="377:379" ph="id...id" />
-            <marker date="1504709482270" expanded="true" signature="410:437" ph="{...}" />
-            <marker date="1504709482270" expanded="true" signature="418:420" ph="id...id" />
-            <marker date="1504709482270" expanded="true" signature="427:431" ph="name...name" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-cache-inmemory/src/inMemoryCache.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-cache-inmemory/lib/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/configure-store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -932,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,88 +670,270 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Calls/Calls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="-239">
+          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="21" />
+          <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="22" />
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-apollo/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-apollo/browser.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/apollo-client/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.graphcool">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-apollo/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="90" column="15" lean-forward="false" selection-start-line="90" selection-start-column="3" selection-end-line="90" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-apollo/ApolloProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-apollo/browser.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-apollo/browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-apollo/shallowEqual.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Test/Form/Styled/Form.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Contacts/Form/CreateContact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contacts/Form/EditContact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contacts/Form/validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Calls/Calls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contacts/Test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
-            <marker date="1505481716909" expanded="true" signature="1765:1768" ph="&lt;Provider/&gt;" />
+            <marker date="1505581122709" expanded="true" signature="546:598" ph="fragment...{&#10;      city&#10;      id&#10;    }" />
+            <marker date="1505581122709" expanded="true" signature="555:559" ph="Test...Test" />
+            <marker date="1505581122709" expanded="true" signature="563:570" ph="Contact...Contact" />
+            <marker date="1505581122709" expanded="true" signature="571:598" ph="{...}" />
+            <marker date="1505581122709" expanded="true" signature="579:583" ph="city...city" />
+            <marker date="1505581122709" expanded="true" signature="590:592" ph="id...id" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Calls/query.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="34">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="35" selection-end-column="1" />
           <folding>
-            <marker date="1504709476455" expanded="true" signature="77:554" ph="query...{&#10;    Contact(id: $id) {&#10;      executedCalls{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _executedCallsMeta {&#10;        count&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _recievedCallsMeta {&#10;        count&#10;      }&#10;    }&#10;  }" />
-            <marker date="1504709476455" expanded="true" signature="83:90" ph="Contact...Contact" />
-            <marker date="1504709476455" expanded="true" signature="90:100" ph="(...)" />
-            <marker date="1504709476455" expanded="true" signature="96:98" ph="ID...ID" />
-            <marker date="1504709476455" expanded="true" signature="101:554" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="107:114" ph="Contact...Contact" />
-            <marker date="1504709476455" expanded="true" signature="107:550" ph="Contact...{&#10;      executedCalls{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _executedCallsMeta {&#10;        count&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _recievedCallsMeta {&#10;        count&#10;      }&#10;    }" />
-            <marker date="1504709476455" expanded="true" signature="114:123" ph="(...)" />
-            <marker date="1504709476455" expanded="true" signature="115:117" ph="id...id" />
-            <marker date="1504709476455" expanded="true" signature="124:550" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="132:145" ph="executedCalls...executedCalls" />
-            <marker date="1504709476455" expanded="true" signature="132:285" ph="executedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
-            <marker date="1504709476455" expanded="true" signature="145:285" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="155:157" ph="id...id" />
-            <marker date="1504709476455" expanded="true" signature="166:173" ph="started...started" />
-            <marker date="1504709476455" expanded="true" signature="182:190" ph="finished...finished" />
-            <marker date="1504709476455" expanded="true" signature="199:205" ph="caller...caller" />
-            <marker date="1504709476455" expanded="true" signature="199:232" ph="caller...{&#10;          name&#10;        }" />
-            <marker date="1504709476455" expanded="true" signature="206:232" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="218:222" ph="name...name" />
-            <marker date="1504709476455" expanded="true" signature="241:250" ph="recipient...recipient" />
-            <marker date="1504709476455" expanded="true" signature="241:277" ph="recipient...{&#10;          name&#10;        }" />
-            <marker date="1504709476455" expanded="true" signature="251:277" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="263:267" ph="name...name" />
-            <marker date="1504709476455" expanded="true" signature="292:310" ph="_executedCallsMeta..._executedCallsMeta" />
-            <marker date="1504709476455" expanded="true" signature="292:334" ph="_executedCallsMeta...{&#10;        count&#10;      }" />
-            <marker date="1504709476455" expanded="true" signature="311:334" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="321:326" ph="count...count" />
-            <marker date="1504709476455" expanded="true" signature="341:354" ph="recievedCalls...recievedCalls" />
-            <marker date="1504709476455" expanded="true" signature="341:495" ph="recievedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
-            <marker date="1504709476455" expanded="true" signature="355:495" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="365:367" ph="id...id" />
-            <marker date="1504709476455" expanded="true" signature="376:383" ph="started...started" />
-            <marker date="1504709476455" expanded="true" signature="392:400" ph="finished...finished" />
-            <marker date="1504709476455" expanded="true" signature="409:415" ph="caller...caller" />
-            <marker date="1504709476455" expanded="true" signature="409:442" ph="caller...{&#10;          name&#10;        }" />
-            <marker date="1504709476455" expanded="true" signature="416:442" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="428:432" ph="name...name" />
-            <marker date="1504709476455" expanded="true" signature="451:460" ph="recipient...recipient" />
-            <marker date="1504709476455" expanded="true" signature="451:487" ph="recipient...{&#10;          name&#10;        }" />
-            <marker date="1504709476455" expanded="true" signature="461:487" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="473:477" ph="name...name" />
-            <marker date="1504709476455" expanded="true" signature="502:520" ph="_recievedCallsMeta..._recievedCallsMeta" />
-            <marker date="1504709476455" expanded="true" signature="502:544" ph="_recievedCallsMeta...{&#10;        count&#10;      }" />
-            <marker date="1504709476455" expanded="true" signature="521:544" ph="{...}" />
-            <marker date="1504709476455" expanded="true" signature="531:536" ph="count...count" />
+            <marker date="1505572682897" expanded="true" signature="77:554" ph="query...{&#10;    Contact(id: $id) {&#10;      executedCalls{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _executedCallsMeta {&#10;        count&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _recievedCallsMeta {&#10;        count&#10;      }&#10;    }&#10;  }" />
+            <marker date="1505572682897" expanded="true" signature="83:90" ph="Contact...Contact" />
+            <marker date="1505572682897" expanded="true" signature="90:100" ph="(...)" />
+            <marker date="1505572682897" expanded="true" signature="96:98" ph="ID...ID" />
+            <marker date="1505572682897" expanded="true" signature="101:554" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="107:114" ph="Contact...Contact" />
+            <marker date="1505572682897" expanded="true" signature="107:550" ph="Contact...{&#10;      executedCalls{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _executedCallsMeta {&#10;        count&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      _recievedCallsMeta {&#10;        count&#10;      }&#10;    }" />
+            <marker date="1505572682897" expanded="true" signature="114:123" ph="(...)" />
+            <marker date="1505572682897" expanded="true" signature="115:117" ph="id...id" />
+            <marker date="1505572682897" expanded="true" signature="124:550" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="132:145" ph="executedCalls...executedCalls" />
+            <marker date="1505572682897" expanded="true" signature="132:285" ph="executedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
+            <marker date="1505572682897" expanded="true" signature="145:285" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="155:157" ph="id...id" />
+            <marker date="1505572682897" expanded="true" signature="166:173" ph="started...started" />
+            <marker date="1505572682897" expanded="true" signature="182:190" ph="finished...finished" />
+            <marker date="1505572682897" expanded="true" signature="199:205" ph="caller...caller" />
+            <marker date="1505572682897" expanded="true" signature="199:232" ph="caller...{&#10;          name&#10;        }" />
+            <marker date="1505572682897" expanded="true" signature="206:232" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="218:222" ph="name...name" />
+            <marker date="1505572682897" expanded="true" signature="241:250" ph="recipient...recipient" />
+            <marker date="1505572682897" expanded="true" signature="241:277" ph="recipient...{&#10;          name&#10;        }" />
+            <marker date="1505572682897" expanded="true" signature="251:277" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="263:267" ph="name...name" />
+            <marker date="1505572682897" expanded="true" signature="292:310" ph="_executedCallsMeta..._executedCallsMeta" />
+            <marker date="1505572682897" expanded="true" signature="292:334" ph="_executedCallsMeta...{&#10;        count&#10;      }" />
+            <marker date="1505572682897" expanded="true" signature="311:334" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="321:326" ph="count...count" />
+            <marker date="1505572682897" expanded="true" signature="341:354" ph="recievedCalls...recievedCalls" />
+            <marker date="1505572682897" expanded="true" signature="341:495" ph="recievedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
+            <marker date="1505572682897" expanded="true" signature="355:495" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="365:367" ph="id...id" />
+            <marker date="1505572682897" expanded="true" signature="376:383" ph="started...started" />
+            <marker date="1505572682897" expanded="true" signature="392:400" ph="finished...finished" />
+            <marker date="1505572682897" expanded="true" signature="409:415" ph="caller...caller" />
+            <marker date="1505572682897" expanded="true" signature="409:442" ph="caller...{&#10;          name&#10;        }" />
+            <marker date="1505572682897" expanded="true" signature="416:442" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="428:432" ph="name...name" />
+            <marker date="1505572682897" expanded="true" signature="451:460" ph="recipient...recipient" />
+            <marker date="1505572682897" expanded="true" signature="451:487" ph="recipient...{&#10;          name&#10;        }" />
+            <marker date="1505572682897" expanded="true" signature="461:487" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="473:477" ph="name...name" />
+            <marker date="1505572682897" expanded="true" signature="502:520" ph="_recievedCallsMeta..._recievedCallsMeta" />
+            <marker date="1505572682897" expanded="true" signature="502:544" ph="_recievedCallsMeta...{&#10;        count&#10;      }" />
+            <marker date="1505572682897" expanded="true" signature="521:544" ph="{...}" />
+            <marker date="1505572682897" expanded="true" signature="531:536" ph="count...count" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contacts/query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding>
+            <marker date="1505576480766" expanded="true" signature="76:586" ph="query...{&#10;    allContacts {&#10;      id&#10;      name&#10;      age&#10;      country&#10;      city&#10;      apt&#10;      executedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;    }&#10;    _allContactsMeta {&#10;      count&#10;    }&#10;    _allCallsMeta {&#10;      count&#10;    }&#10;  }" />
+            <marker date="1505576480766" expanded="true" signature="82:90" ph="Contacts...Contacts" />
+            <marker date="1505576480766" expanded="true" signature="91:586" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="97:108" ph="allContacts...allContacts" />
+            <marker date="1505576480766" expanded="true" signature="97:503" ph="allContacts...{&#10;      id&#10;      name&#10;      age&#10;      country&#10;      city&#10;      apt&#10;      executedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;      recievedCalls {&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }&#10;    }" />
+            <marker date="1505576480766" expanded="true" signature="109:503" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="117:119" ph="id...id" />
+            <marker date="1505576480766" expanded="true" signature="126:130" ph="name...name" />
+            <marker date="1505576480766" expanded="true" signature="137:140" ph="age...age" />
+            <marker date="1505576480766" expanded="true" signature="147:154" ph="country...country" />
+            <marker date="1505576480766" expanded="true" signature="161:165" ph="city...city" />
+            <marker date="1505576480766" expanded="true" signature="172:175" ph="apt...apt" />
+            <marker date="1505576480766" expanded="true" signature="182:195" ph="executedCalls...executedCalls" />
+            <marker date="1505576480766" expanded="true" signature="182:336" ph="executedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
+            <marker date="1505576480766" expanded="true" signature="196:336" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="206:208" ph="id...id" />
+            <marker date="1505576480766" expanded="true" signature="217:224" ph="started...started" />
+            <marker date="1505576480766" expanded="true" signature="233:241" ph="finished...finished" />
+            <marker date="1505576480766" expanded="true" signature="250:256" ph="caller...caller" />
+            <marker date="1505576480766" expanded="true" signature="250:283" ph="caller...{&#10;          name&#10;        }" />
+            <marker date="1505576480766" expanded="true" signature="257:283" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="269:273" ph="name...name" />
+            <marker date="1505576480766" expanded="true" signature="292:301" ph="recipient...recipient" />
+            <marker date="1505576480766" expanded="true" signature="292:328" ph="recipient...{&#10;          name&#10;        }" />
+            <marker date="1505576480766" expanded="true" signature="302:328" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="314:318" ph="name...name" />
+            <marker date="1505576480766" expanded="true" signature="343:356" ph="recievedCalls...recievedCalls" />
+            <marker date="1505576480766" expanded="true" signature="343:497" ph="recievedCalls...{&#10;        id&#10;        started&#10;        finished&#10;        caller {&#10;          name&#10;        }&#10;        recipient {&#10;          name&#10;        }&#10;      }" />
+            <marker date="1505576480766" expanded="true" signature="357:497" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="367:369" ph="id...id" />
+            <marker date="1505576480766" expanded="true" signature="378:385" ph="started...started" />
+            <marker date="1505576480766" expanded="true" signature="394:402" ph="finished...finished" />
+            <marker date="1505576480766" expanded="true" signature="411:417" ph="caller...caller" />
+            <marker date="1505576480766" expanded="true" signature="411:444" ph="caller...{&#10;          name&#10;        }" />
+            <marker date="1505576480766" expanded="true" signature="418:444" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="430:434" ph="name...name" />
+            <marker date="1505576480766" expanded="true" signature="453:462" ph="recipient...recipient" />
+            <marker date="1505576480766" expanded="true" signature="453:489" ph="recipient...{&#10;          name&#10;        }" />
+            <marker date="1505576480766" expanded="true" signature="463:489" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="475:479" ph="name...name" />
+            <marker date="1505576480766" expanded="true" signature="508:524" ph="_allContactsMeta..._allContactsMeta" />
+            <marker date="1505576480766" expanded="true" signature="508:544" ph="_allContactsMeta...{&#10;      count&#10;    }" />
+            <marker date="1505576480766" expanded="true" signature="525:544" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="533:538" ph="count...count" />
+            <marker date="1505576480766" expanded="true" signature="549:562" ph="_allCallsMeta..._allCallsMeta" />
+            <marker date="1505576480766" expanded="true" signature="549:582" ph="_allCallsMeta...{&#10;      count&#10;    }" />
+            <marker date="1505576480766" expanded="true" signature="563:582" ph="{...}" />
+            <marker date="1505576480766" expanded="true" signature="571:576" ph="count...count" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Contacts/Contacts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <marker date="1505584930525" expanded="true" signature="1509:1638" ph="mutation...{&#10;    updateContact(id:$id, name:$name) {&#10;      id&#10;      createdAt&#10;      name&#10;    }&#10;  }" />
+            <marker date="1505584930525" expanded="true" signature="1518:1524" ph="update...update" />
+            <marker date="1505584930525" expanded="true" signature="1524:1550" ph="(...)" />
+            <marker date="1505584930525" expanded="true" signature="1530:1532" ph="ID...ID" />
+            <marker date="1505584930525" expanded="true" signature="1542:1548" ph="String...String" />
+            <marker date="1505584930525" expanded="true" signature="1551:1638" ph="{...}" />
+            <marker date="1505584930525" expanded="true" signature="1557:1570" ph="updateContact...updateContact" />
+            <marker date="1505584930525" expanded="true" signature="1557:1634" ph="updateContact...{&#10;      id&#10;      createdAt&#10;      name&#10;    }" />
+            <marker date="1505584930525" expanded="true" signature="1570:1590" ph="(...)" />
+            <marker date="1505584930525" expanded="true" signature="1571:1573" ph="id...id" />
+            <marker date="1505584930525" expanded="true" signature="1579:1583" ph="name...name" />
+            <marker date="1505584930525" expanded="true" signature="1591:1634" ph="{...}" />
+            <marker date="1505584930525" expanded="true" signature="1599:1601" ph="id...id" />
+            <marker date="1505584930525" expanded="true" signature="1608:1617" ph="createdAt...createdAt" />
+            <marker date="1505584930525" expanded="true" signature="1624:1628" ph="name...name" />
+          </folding>
         </state>
       </provider>
     </entry>
