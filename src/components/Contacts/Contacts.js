@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { graphql, gql } from 'react-apollo';
 import { Link } from 'react-router-dom'
+import Test from './WithSelector';
 import { ALL_CONTACTS_QUERY } from './query';
 
 class ContactsList extends Component {
@@ -9,7 +10,6 @@ class ContactsList extends Component {
   };
 
   handleChange(id, e) {
-    console.log(id);
     this.setState({ name: {
       ...this.state.name,
       [id]: e.target.value,
@@ -34,6 +34,7 @@ class ContactsList extends Component {
     const contacts = this.props.contacts.allContacts;
     return (
       <div>
+        <Test/>
         total contacts: {this.props.contacts._allContactsMeta.count}
         {contacts.map((c) => (
           <div key={c.id} style={{ border: '1px solid green' }}>
@@ -44,7 +45,7 @@ class ContactsList extends Component {
             <div>Apt: {c.apt}</div>
             <Link to={`/calls/${c.id}`}>{c.name} Calls</Link>
             <div>
-              <input value={this.state.name[c.id]} onChange={this.handleChange.bind(this, c.id)} />
+              <input type="text" value={this.state.name[c.id] || ''} onChange={this.handleChange.bind(this, c.id)} />
               <button onClick={this.mutate.bind(this, c.id, this.state.name)}>Change Name</button>
             </div>
           </div>

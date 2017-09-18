@@ -1,5 +1,5 @@
 {
-  "name": "hackernews-react-apollo",
+  "name": "apollo_test_project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,7 +32,7 @@
     "postcss-loader": "2.0.6",
     "promise": "8.0.1",
     "react": "^15.6.1",
-    "react-apollo": "^1.4.14",
+    "react-apollo": "^1.4.15",
     "react-dev-utils": "^3.1.0",
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.10",

@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
 import Contacts from './Contacts/Contacts';
 import Calls from './Calls/Calls';
-import Test from './Contacts/Test';
-
-import '../styles/App.css';
+import Test from './Contacts/WithSelector';
 
 class App extends Component {
   render() {
