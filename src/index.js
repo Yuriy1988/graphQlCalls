@@ -1,49 +1,55 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom'
-import { ApolloProvider, createNetworkInterface, ApolloClient } from 'react-apollo'
-import { Provider } from 'react-redux';
-import App from './components/App';
-import registerServiceWorker from './registerServiceWorker';
-import { GC_AUTH_TOKEN } from './constants'
-import DevTools from './dev-tools';
-import configureStore from './configure-store';
-import './styles/index.css';
+import ApolloClient from "apollo-client";
+import HttpLink from "apollo-link-http";
+import InMemoryCache from "apollo-cache-inmemory";
+import gql from 'graphql-tag';
 
-const store = configureStore();
-const networkInterface = createNetworkInterface({
-    uri: 'https://api.graph.cool/simple/v1/cj6dmo8bm39lt0121yi49cl6a'
-});
-
-networkInterface.use([{
-  applyMiddleware(req, next) {
-    if (!req.options.headers) {
-      req.options.headers = {}
+export const ALL_CONTACTS_QUERY = gql`
+  query Contacts {
+    allContacts {
+      id
+      name
+      age
+      country
+      city
+      apt
+      executedCalls {
+        id
+        started
+        finished
+        caller {
+          name
+        }
+        recipient {
+          name
+        }
+      }
+      recievedCalls {
+        id
+        started
+        finished
+        caller {
+          name
+        }
+        recipient {
+          name
+        }
+      }
     }
-    const token = localStorage.getItem(GC_AUTH_TOKEN);
-    req.options.headers.authorization = token ? `Bearer ${token}` : null;
-    next();
+    _allContactsMeta {
+      count
+    }
+    _allCallsMeta {
+      count
+    }
   }
-}]);
+`;
+
+
+const uri = 'https://api.graph.cool/simple/v1/cj6dmo8bm39lt0121yi49cl6a';
 
 const client = new ApolloClient({
-  // dataIdFromObject: o => o.id,
-  networkInterface,
+  link: new HttpLink({ uri }),
+  cache: new InMemoryCache(),
 });
+const test = client.query({ query: ALL_CONTACTS_QUERY });
 
-window.client = client;
-
-ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <ApolloProvider client={client}>
-        <div>
-          <App />
-          <DevTools />
-        </div>
-      </ApolloProvider>
-    </BrowserRouter>
-  </Provider>
-  , document.getElementById('root')
-);
-registerServiceWorker();
