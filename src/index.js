@@ -1,55 +1,59 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux';
+import App from './components/App';
+import registerServiceWorker from './registerServiceWorker';
+import { GC_AUTH_TOKEN } from './constants'
+import DevTools from './dev-tools';
+import configureStore from './configure-store';
+import './styles/index.css';
 import ApolloClient from "apollo-client";
 import HttpLink from "apollo-link-http";
-import InMemoryCache from "apollo-cache-inmemory";
-import gql from 'graphql-tag';
-
-export const ALL_CONTACTS_QUERY = gql`
-  query Contacts {
-    allContacts {
-      id
-      name
-      age
-      country
-      city
-      apt
-      executedCalls {
-        id
-        started
-        finished
-        caller {
-          name
-        }
-        recipient {
-          name
-        }
-      }
-      recievedCalls {
-        id
-        started
-        finished
-        caller {
-          name
-        }
-        recipient {
-          name
-        }
-      }
-    }
-    _allContactsMeta {
-      count
-    }
-    _allCallsMeta {
-      count
-    }
-  }
-`;
-
+import SetContextLink from 'apollo-link-set-context';
+import {ApolloLink} from 'apollo-link'
+import Cache from "apollo-cache-inmemory";
+import { ApolloProvider } from 'react-apollo'
 
 const uri = 'https://api.graph.cool/simple/v1/cj6dmo8bm39lt0121yi49cl6a';
 
+const setContext = (context) => ({
+  ...context,
+  headers: {
+    ...context.headers,
+    auth: GC_AUTH_TOKEN,
+  },
+})
+
+const link = ApolloLink.from([
+  new SetContextLink(setContext),
+  new HttpLink({ uri }),
+])
+
 const client = new ApolloClient({
-  link: new HttpLink({ uri }),
-  cache: new InMemoryCache(),
+  link,
+  cache: new Cache().restore(window.__APOLLO_STATE__ || {}),
 });
-const test = client.query({ query: ALL_CONTACTS_QUERY });
+
+client.initStore = () => {};
+
+//
+const store = configureStore();
+
+window.client = client;
+
+ReactDOM.render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <ApolloProvider client={client}>
+        <div>
+          <App />
+          <DevTools />
+        </div>
+      </ApolloProvider>
+    </BrowserRouter>
+  </Provider>
+  , document.getElementById('root')
+);
+registerServiceWorker();
 
