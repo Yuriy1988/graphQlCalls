@@ -5,8 +5,8 @@ export const CONTACT_CALLS_QUERY = gql`
     Contact(id: $id) {
       executedCalls{
         id
-        started
-        finished
+#        started
+#        finished
         caller {
           name
         }
@@ -19,8 +19,8 @@ export const CONTACT_CALLS_QUERY = gql`
       }
       recievedCalls {
         id
-        started
-        finished
+#        started
+#        finished
         caller {
           name
         }

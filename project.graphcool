@@ -3,32 +3,32 @@
 
 type File implements Node {
   contentType: String!
-  createdAt: DateTime!
+  createdAt: String!
   id: ID! @isUnique
   name: String!
   secret: String! @isUnique
   size: Int!
-  updatedAt: DateTime!
+  updatedAt: String!
   url: String! @isUnique
 }
 
 type User implements Node {
-  createdAt: DateTime!
+  createdAt: String!
   id: ID! @isUnique
   email: String @isUnique
-  updatedAt: DateTime!
+  updatedAt: String!
   name: String!
   password: String
 }
 
 type Call implements Node {
-  started: DateTime!
-  finished: DateTime!
+  started: String!
+  finished: String!
   recipient: Contact! @relation(name: "RecipientCalls")
   caller: Contact! @relation(name: "CallerCalls")
-  createdAt: DateTime!
+  createdAt: String!
   id: ID! @isUnique
-  updatedAt: DateTime!
+  updatedAt: String!
 }
 
 type Contact implements Node {
@@ -42,6 +42,6 @@ type Contact implements Node {
   apt: String!
   recievedCalls: [Call!]! @relation(name: "RecipientCalls")
   executedCalls: [Call!]! @relation(name: "CallerCalls")
-  createdAt: DateTime!
-  updatedAt: DateTime!
+  createdAt: String!
+  updatedAt: String!
 }

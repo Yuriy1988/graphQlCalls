@@ -11,8 +11,8 @@ export const ALL_CONTACTS_QUERY = gql`
       apt
       executedCalls {
         id
-        started
-        finished
+#        started
+#        finished
         caller {
           name
         }
@@ -22,8 +22,8 @@ export const ALL_CONTACTS_QUERY = gql`
       }
       recievedCalls {
         id
-        started
-        finished
+#        started
+#        finished
         caller {
           name
         }
