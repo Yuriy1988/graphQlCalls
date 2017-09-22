@@ -17,18 +17,19 @@ import { ApolloProvider } from 'react-apollo'
 
 const uri = 'http://10.28.12.193:8100/graphql';
 
-const setContext = (context) => ({
-  ...context,
-  headers: {
-    ...context.headers,
-    auth: GC_AUTH_TOKEN,
-  },
-})
+const setContext = (context) => {
+  return {
+    headers: {
+      ...context.headers,
+      auth: GC_AUTH_TOKEN,
+    },
+  }
+};
 
 const link = ApolloLink.from([
   new SetContextLink(setContext),
   new HttpLink({ uri }),
-])
+]);
 
 const client = new ApolloClient({
   link,

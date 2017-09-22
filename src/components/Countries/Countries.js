@@ -22,8 +22,11 @@ class CountriesList extends Component {
     });
   }
 
+  changeRoute() {
+    this.props.history.push('/test');
+  }
+
   render() {
- console.log("this.props ", this.props);
     if (this.props.countries && this.props.countries.loading) {
       return <div>Loading</div>
     }
@@ -32,7 +35,7 @@ class CountriesList extends Component {
       return <div>Error</div>
     }
 
-    const countries = this.props.countries;
+    const { countries } = this.props.countries;
     return (
       <div>
         <Test/>
@@ -48,6 +51,7 @@ class CountriesList extends Component {
             <div>
               <input type="text" value={this.state.name[c.id] || ''} onChange={this.handleChange.bind(this, c.id)} />
               <button onClick={this.mutate.bind(this, c.id, this.state.name)}>Change Name</button>
+              <button onClick={() => { this.changeRoute() }}>Click me</button>
             </div>
           </div>
         ))}
