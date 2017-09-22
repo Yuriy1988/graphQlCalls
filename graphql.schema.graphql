@@ -1,0 +1,27 @@
+type Country {
+  id: Int
+  name: String
+  languages: [Language]
+}
+
+type Language {
+  id: Int
+  name: String
+}
+
+type Mutation {
+  createCountry(countryDef: countryInput): Country
+  deleteCountry(id: Int): Boolean
+  updateCountry(id: Int, countryDef: countryInput): Country
+}
+
+type Query {
+  retriveLanguage(id: Int = 0): [Language]
+  countries(id: Int = 0): [Country]
+  country(id: Int): Country
+}
+
+input countryInput {
+  name: String
+  languages: [Int]
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {graphql} from 'react-apollo';
-import { CONTACT_CALLS_QUERY } from './query';
+import { COUNTRY_QUERY } from './query';
 
 class Calls extends Component {
   render() {
@@ -55,7 +55,7 @@ class Calls extends Component {
   }
 }
 
-export default graphql(CONTACT_CALLS_QUERY, {
+export default graphql(COUNTRY_QUERY, {
     name: 'calls',
     options: (props) => ({ variables: { id: props.match.params.id }, notifyOnNetworkStatusChange: true }),
 })(Calls);

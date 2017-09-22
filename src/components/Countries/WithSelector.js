@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import { withApollo } from 'react-apollo';
-import { ALL_CONTACTS_QUERY } from './query';
+import { ALL_COUNTRIES_QUERY } from './query';
 
 class WithSelector extends Component {
   render() {
     //use gql schema to read from apollo cache
-    const { allContacts } = this.props.client.readQuery({ query: ALL_CONTACTS_QUERY });
+    const { countries } = this.props.client.readQuery({ query: ALL_COUNTRIES_QUERY });
 
     return (
       <div>
-        {allContacts[0].name}
+        {countries[0].name}
       </div>
     )
   }

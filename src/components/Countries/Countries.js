@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { graphql, gql } from 'react-apollo';
 import { Link } from 'react-router-dom'
 import Test from './WithSelector';
-import { ALL_CONTACTS_QUERY } from './query';
+import { ALL_COUNTRIES_QUERY } from './query';
 
-class ContactsList extends Component {
+class CountriesList extends Component {
   state = {
     name: {}
   };
@@ -23,20 +23,21 @@ class ContactsList extends Component {
   }
 
   render() {
-    if (this.props.contacts && this.props.contacts.loading) {
+ console.log("this.props ", this.props);
+    if (this.props.countries && this.props.countries.loading) {
       return <div>Loading</div>
     }
 
-    if (this.props.contacts && this.props.contacts.error) {
+    if (this.props.countries && this.props.countries.error) {
       return <div>Error</div>
     }
 
-    const contacts = this.props.contacts.allContacts;
+    const countries = this.props.countries;
     return (
       <div>
         <Test/>
-        total contacts: {this.props.contacts._allContactsMeta.count}
-        {contacts.map((c) => (
+        total countries: {this.props.countries.length}
+        {countries.map((c) => (
           <div key={c.id} style={{ border: '1px solid green' }}>
             <div>Name: {c.name}</div>
             <div>Age: {c.age}</div>
@@ -56,13 +57,16 @@ class ContactsList extends Component {
 }
 
 const changeName = gql`
-  mutation update($id: ID!, $name: String!) {
-    updateContact(id:$id, name:$name) {
+  mutation updateCountry($id: ID!, $name: String!) {
+    updateCountry(id: $id, countryDef: {name: $name, languages: [1, 2, 3]}) {
       id
-      createdAt
       name
+      languages {
+        id
+        name
+      }
     }
   }
 `;
 
-export default graphql(changeName)(graphql(ALL_CONTACTS_QUERY, { name: 'contacts' })(ContactsList))
+export default graphql(changeName)(graphql(ALL_COUNTRIES_QUERY, { name: 'countries' })(CountriesList))

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
-import Contacts from './Contacts/Contacts';
-import Calls from './Calls/Calls';
-import Test from './Contacts/WithSelector';
+import Countries from './Countries/Countries';
+import Country from './Country/Country';
+import Test from './Countries/WithSelector';
 
 class App extends Component {
   render() {
@@ -11,9 +11,9 @@ class App extends Component {
         <div className='ph3 pv1 background-gray'>
           <Switch>
             <Route exact path='/test' component={Test} />
-            <Route exact path='/' render={() => <Redirect to='/contacts' />} />
-            <Route exact path='/contacts' component={Contacts} />
-            <Route exact path='/calls/:id' component={Calls} />
+            <Route exact path='/countries' component={Countries} />
+            <Route exact path='/countries/:id' component={Country} />
+            <Route exact path='/' render={() => <Redirect to='/countries' />} />
           </Switch>
         </div>
       </div>

@@ -15,7 +15,7 @@ import {ApolloLink} from 'apollo-link'
 import Cache from "apollo-cache-inmemory";
 import { ApolloProvider } from 'react-apollo'
 
-const uri = 'https://api.graph.cool/simple/v1/cj6dmo8bm39lt0121yi49cl6a';
+const uri = 'http://10.28.12.193:8100/graphql';
 
 const setContext = (context) => ({
   ...context,
