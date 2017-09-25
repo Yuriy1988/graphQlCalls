@@ -1,3 +1,4 @@
 export const GC_AUTH_TOKEN = 'graphcool-auth-token';
 
 export const UPDATE_LANGUAGES_SELECT = 'UPDATE_LANGUAGES_SELECT';
+export const UPDATE_SELECTED_COUNTRY = 'UPDATE_SELECTED_COUNTRY';
