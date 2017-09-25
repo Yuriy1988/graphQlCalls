@@ -1,5 +1,6 @@
 import {
-  UPDATE_LANGUAGES_SELECT
+  UPDATE_LANGUAGES_SELECT,
+  UPDATE_SELECTED_COUNTRY
 } from '../constants';
 
 
@@ -8,7 +9,8 @@ import {
  * @type {object}
  */
 const initialState = {
-  languages: []
+  languages: [],
+  selectedCountry: {}
 };
 
 /**
@@ -25,6 +27,12 @@ export default function venueEditor(state = initialState, action) {
       return {
         ...state,
         languages: action.payload
+      };
+
+    case UPDATE_SELECTED_COUNTRY:
+      return {
+        ...state,
+        selectedCountry: action.payload
       };
 
     default:

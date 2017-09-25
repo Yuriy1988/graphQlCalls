@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
-import { Provider } from 'react-redux';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import { GC_AUTH_TOKEN } from './constants'
@@ -38,23 +37,20 @@ const client = new ApolloClient({
 
 client.initStore = () => {};
 
-//
 const store = configureStore();
 
 window.client = client;
 
 ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <ApolloProvider client={client}>
-        <div>
-          <App />
-          <DevTools />
-        </div>
-      </ApolloProvider>
-    </BrowserRouter>
-  </Provider>
-  , document.getElementById('root')
+  <BrowserRouter>
+    <ApolloProvider store={store} client={client}>
+      <div>
+        <App />
+        <DevTools />
+      </div>
+    </ApolloProvider>
+  </BrowserRouter>,
+  document.getElementById('root')
 );
 registerServiceWorker();
 

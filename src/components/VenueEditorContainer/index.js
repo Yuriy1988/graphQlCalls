@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 import { bindActionCreators, compose } from 'redux';
 import { connect } from 'react-redux';
 import { graphql } from 'react-apollo';
+
 import WithLoader from '../../hocs/WithLoader';
-import Select from '../Select/index';
+
+import Select from '../UI/Select/index';
+import Button from '../UI/Button/index';
+import Input from '../UI/Input/index';
+
 import * as venueActions from './venueActions';
-import { ALL_COUNTRIES_QUERY } from '../Countries/query';
+
+import {
+  ALL_COUNTRIES_QUERY
+} from './queries/coutries';
+import {
+  CREATE_COUNTRY_MUTATION,
+  UPDATE_COUNTRY_MUTATION,
+  DELETE_COUNTRY_MUTATION
+} from './mutations/coutries';
 
 
 /**
@@ -14,6 +28,14 @@ import { ALL_COUNTRIES_QUERY } from '../Countries/query';
  * Venue Editor Container component
  */
 class VenueEditorContainer extends Component {
+
+  /**
+   * Local state for new country name
+   * @type {object}
+   */
+  state = {
+    newCountryName: ''
+  };
 
   /**
    * Define propTypes
@@ -32,6 +54,41 @@ class VenueEditorContainer extends Component {
   }
 
   /**
+   * Set active country when component is loaded
+   */
+  componentDidMount() {
+    this.updateFirstSelectedCountry();
+  }
+
+  /**
+   * Save new country name value
+   * @param {object} event
+   */
+  saveNewCountryNameValue(event) {
+
+    this.setState({
+      newCountryName: event.target.value
+    });
+
+  }
+
+  /**
+   * Set first available country as active
+   */
+  updateFirstSelectedCountry() {
+
+    const {venueActions, data: {countries}} = this.props;
+    const firstCountry = countries && countries[0];
+
+    if(typeof firstCountry !== 'object') {
+      return;
+    }
+
+    venueActions.updateSelectedCountry(firstCountry);
+
+  }
+
+  /**
    * Update languages select on country change
    * @param {object} countries
    * @param {object} event
@@ -40,13 +97,106 @@ class VenueEditorContainer extends Component {
 
     const {venueActions} = this.props;
     const selectedId = parseInt(event.target.value || '', 10);
-    const languages = ((countries.filter(country => country.id === selectedId))[0] || {}).languages;
+    const activeCountry = ((countries.filter(country => country.id === selectedId))[0] || {});
+    const activeLanguages = activeCountry.languages || [];
 
-    if(!languages) {
+    venueActions.updateSelectedCountry(activeCountry);
+    venueActions.updateLanguagesSelect(activeLanguages);
+
+  }
+
+  /**
+   * Create new country on button click
+   */
+  onCreateCountryClick() {
+
+    const {createCountry} = this.props;
+
+    createCountry({
+      variables: {
+        countryDef: {
+          name: this.state.newCountryName || 'New Country',
+          languages: [
+            1, 2
+          ]
+        }
+      },
+
+      // update: (proxy, {data}) => {
+      //
+      //   console.log(proxy);
+      //
+      //   const cache = proxy.readQuery({query: ALL_COUNTRIES_QUERY});
+      //
+      //   cache.countries.push(data.createContact);
+      //   proxy.writeQuery({
+      //     query: ALL_COUNTRIES_QUERY,
+      //     data: cache
+      //   });
+      //
+      // },
+
+      refetchQueries: [{
+        query: ALL_COUNTRIES_QUERY
+      }]
+    });
+
+    // Reset country input
+    this.setState({
+      newCountryName: ''
+    });
+
+  }
+
+  /**
+   * Update selected country on button click
+   */
+  onUpdateCountryClick() {
+
+    const {updateCountry, selectedCountry: {id, name}} = this.props;
+
+    if(typeof id !== 'number' || typeof name !== 'string') {
       return;
     }
 
-    venueActions.updateLanguagesSelect(languages);
+    const rawName = name.replace(/\(.*?\)/i, '');
+    const creationDate = (new Date()).toString().match(/\d+:\d+:\d+/i);
+
+    updateCountry({
+      variables: {
+        id,
+        countryDef: {
+          name: `${rawName} (Updated at ${creationDate})`
+        }
+      },
+      refetchQueries: [{
+        query: ALL_COUNTRIES_QUERY
+      }]
+    });
+
+  }
+
+  /**
+   * Delete selected country on button click
+   */
+  onDeleteCountryClick() {
+
+    const {deleteCountry,  selectedCountry: {id}} = this.props;
+
+    if(typeof id !== 'number') {
+      return;
+    }
+
+    deleteCountry({
+      variables: {
+        id
+      },
+      refetchQueries: [{
+        query: ALL_COUNTRIES_QUERY
+      }]
+    }).then(() => {
+      this.updateFirstSelectedCountry();
+    });
 
   }
 
@@ -63,7 +213,7 @@ class VenueEditorContainer extends Component {
 
     return (
 
-      <div className='venue-editor' style={{display: 'flex'}}>
+      <div className='venue-editor'>
 
         <Select
           label="Country"
@@ -71,8 +221,31 @@ class VenueEditorContainer extends Component {
           onChange={this.onCountryChange.bind(this, countries)}
         />
 
+        <div>
+          <p style={{margin: '0 0 10px 0'}}>Manage countries:</p>
+          <Input
+            type="text"
+            name="country-name"
+            value={this.state.newCountryName}
+            onChange={this.saveNewCountryNameValue.bind(this)}/>
+          <Button
+            text="Create New Country"
+            onClick={this.onCreateCountryClick.bind(this)}>
+          </Button>
+
+          <Button
+            text="Update Country"
+            onClick={this.onUpdateCountryClick.bind(this)}>
+          </Button>
+
+          <Button
+            text="Delete Country"
+            onClick={this.onDeleteCountryClick.bind(this)}>
+          </Button>
+        </div>
+
         <Select
-          label="Languages"
+          label="Language IDs"
           data={languages}
         />
 
@@ -85,7 +258,8 @@ class VenueEditorContainer extends Component {
 }
 
 const mapStateToProps = ({venueEditor}) => ({
-  languages: venueEditor.languages
+  languages: venueEditor.languages,
+  selectedCountry: venueEditor.selectedCountry
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -94,6 +268,9 @@ const mapDispatchToProps = (dispatch) => ({
 
 export default compose(
   graphql(ALL_COUNTRIES_QUERY),
+  graphql(CREATE_COUNTRY_MUTATION, {name: 'createCountry'}),
+  graphql(UPDATE_COUNTRY_MUTATION, {name: 'updateCountry'}),
+  graphql(DELETE_COUNTRY_MUTATION, {name: 'deleteCountry'}),
   WithLoader,
   connect(mapStateToProps, mapDispatchToProps)
 )(VenueEditorContainer);

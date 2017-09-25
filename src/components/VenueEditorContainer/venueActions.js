@@ -1,5 +1,6 @@
 import {
-  UPDATE_LANGUAGES_SELECT
+  UPDATE_LANGUAGES_SELECT,
+  UPDATE_SELECTED_COUNTRY
 } from '../../constants';
 
 /**
@@ -9,4 +10,9 @@ import {
 export const updateLanguagesSelect = (languages) => ({
   type: UPDATE_LANGUAGES_SELECT,
   payload: languages
+});
+
+export const updateSelectedCountry = (country) => ({
+  type: UPDATE_SELECTED_COUNTRY,
+  payload: country
 });
