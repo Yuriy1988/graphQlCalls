@@ -39,7 +39,7 @@ class VenueEditorContainer extends Component {
   onCountryChange(countries, event) {
 
     const {venueActions} = this.props;
-    const selectedId = parseInt(event.target.value || '');
+    const selectedId = parseInt(event.target.value || '', 10);
     const languages = ((countries.filter(country => country.id === selectedId))[0] || {}).languages;
 
     if(!languages) {
