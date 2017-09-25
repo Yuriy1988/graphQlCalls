@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Countries from './Countries/Countries';
 import Country from './Country/Country';
 import Test from './Countries/WithSelector';
+import VenueEditorContainer from './VenueEditorContainer/index';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
             <Route exact path='/test' component={Test} />
             <Route exact path='/countries' component={Countries} />
             <Route exact path='/countries/:id' component={Country} />
+            <Route exact path='/venue-editor' component={VenueEditorContainer} />
             <Route exact path='/' render={() => <Redirect to='/countries' />} />
           </Switch>
         </div>
