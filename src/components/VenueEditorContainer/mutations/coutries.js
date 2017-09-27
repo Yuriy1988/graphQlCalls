@@ -3,7 +3,8 @@ import gql from 'graphql-tag';
 export const CREATE_COUNTRY_MUTATION = gql`
   mutation createCountry($countryDef: countryInput) {
     createCountry(countryDef: $countryDef) {
-      name,
+      id
+      name
       languages {
         id
       }

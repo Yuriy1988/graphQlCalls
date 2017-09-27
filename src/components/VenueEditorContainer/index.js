@@ -122,23 +122,19 @@ class VenueEditorContainer extends Component {
         }
       },
 
-      // update: (proxy, {data}) => {
-      //
-      //   console.log(proxy);
-      //
-      //   const cache = proxy.readQuery({query: ALL_COUNTRIES_QUERY});
-      //
-      //   cache.countries.push(data.createContact);
-      //   proxy.writeQuery({
-      //     query: ALL_COUNTRIES_QUERY,
-      //     data: cache
-      //   });
-      //
-      // },
+      // Update store, create a new country
+      update: (proxy, {data}) => {
 
-      refetchQueries: [{
-        query: ALL_COUNTRIES_QUERY
-      }]
+        const cache = proxy.readQuery({query: ALL_COUNTRIES_QUERY});
+
+        cache.countries.push(data.createCountry);
+        proxy.writeQuery({
+          query: ALL_COUNTRIES_QUERY,
+          data: cache
+        });
+
+      }
+
     });
 
     // Reset country input
@@ -168,10 +164,7 @@ class VenueEditorContainer extends Component {
         countryDef: {
           name: `${rawName} (Updated at ${creationDate})`
         }
-      },
-      refetchQueries: [{
-        query: ALL_COUNTRIES_QUERY
-      }]
+      }
     });
 
   }
@@ -191,9 +184,20 @@ class VenueEditorContainer extends Component {
       variables: {
         id
       },
-      refetchQueries: [{
-        query: ALL_COUNTRIES_QUERY
-      }]
+
+      // Update store, delete required country
+      update: (proxy) => {
+
+        const cache = proxy.readQuery({query: ALL_COUNTRIES_QUERY});
+
+        cache.countries = cache.countries.filter(country => country.id !== id);
+        proxy.writeQuery({
+          query: ALL_COUNTRIES_QUERY,
+          data: cache
+        });
+
+      }
+
     }).then(() => {
       this.updateFirstSelectedCountry();
     });
