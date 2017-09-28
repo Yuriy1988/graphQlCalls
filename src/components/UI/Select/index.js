@@ -9,9 +9,14 @@ import PropTypes from 'prop-types';
  */
 const Select = props => (
   
-  <div className='ui-select-box' style={{padding: '20px 0'}}>
-    {props.label && <label>{props.label}:</label>}
-    <select onChange={props.onChange} style={{minWidth: '100px'}}>
+  <div className="oc-select">
+    {props.label && <label
+      className="oc-label">
+      {props.label}:
+    </label>}
+    <select
+      className="oc-select__select"
+      onChange={props.onChange}>
       {props.data.map(country =>
         country && <option
           key={country.id}

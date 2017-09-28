@@ -9,7 +9,10 @@ import PropTypes from 'prop-types';
  */
 const Button = props => (
   
-  <button onClick={props.onClick}>
+  <button
+    className="oc-btn"
+    onClick={props.onClick}
+    style={{marginRight: '20px'}}>
     {props.text}
   </button>
   
