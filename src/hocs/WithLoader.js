@@ -20,7 +20,7 @@ const WithLoader = BaseComponent => {
         data: PropTypes.shape({
           loading: PropTypes.bool.isRequired,
           errors: PropTypes.array,
-          error: PropTypes.string
+          error: PropTypes.object
         })
       }
     }
@@ -30,7 +30,7 @@ const WithLoader = BaseComponent => {
       const {data: {
         loading = false,
         errors = [],
-        error = ''}
+        error}
       } = this.props;
 
       if(loading) {

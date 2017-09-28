@@ -22,6 +22,8 @@ import {
   DELETE_COUNTRY_MUTATION
 } from './mutations/coutries';
 
+import '../../styles/core.css';
+
 
 /**
  * @class
@@ -217,44 +219,65 @@ class VenueEditorContainer extends Component {
 
     return (
 
-      <div className='venue-editor'>
-
-        <Select
-          label="Country"
-          data={countries}
-          onChange={this.onCountryChange.bind(this, countries)}
-        />
-
-        <div>
-          <p style={{margin: '0 0 10px 0'}}>Manage countries:</p>
+      <div className='oc-page'>
+        <div className="oc-page__frame">
+          <div className="oc-page__header">
+            <h1>Create a new Venue</h1>
+          </div>
+          <Select
+            label="Country"
+            data={countries}
+            onChange={this.onCountryChange.bind(this, countries)}
+          />
+        </div>
+        <div className="oc-page__frame">
           <Input
             type="text"
             name="country-name"
             value={this.state.newCountryName}
+            label={'Manage countries'}
+            placeholder={'Enter new country name'}
             onChange={this.saveNewCountryNameValue.bind(this)}/>
           <Button
             text="Create New Country"
             onClick={this.onCreateCountryClick.bind(this)}>
           </Button>
-
           <Button
             text="Update Country"
             onClick={this.onUpdateCountryClick.bind(this)}>
           </Button>
-
           <Button
             text="Delete Country"
             onClick={this.onDeleteCountryClick.bind(this)}>
           </Button>
         </div>
-
-        <Select
-          label="Language IDs"
-          data={languages}
-        />
-
+        <div className="oc-page__frame">
+          <Select
+            label="Language IDs"
+            data={languages}
+          />
+        </div>
+        <div className="oc-alert oc-alert--dismissible oc-alert--feedback oc-alert--open" role="alert">
+          <div className="oc-alert__content">
+            <p>GrapqhQL error</p>
+            <p>Please try again later</p>
+            <ul>
+              <li>Refresh the page</li>
+              <li>Try to switch the country</li>
+            </ul>
+            <span className="oc-feedback__warning-corner">
+            <svg className="oc-icon oc-icon-alert">
+                <use xlinkHref="img/sprite.svg#icon-alert" />
+            </svg>
+        </span>
+            <button className="oc-alert__close">
+              <svg className="oc-icon oc-icon-remove">
+                <use xlinkHref="img/sprite.svg#icon-remove" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-
     )
 
   }
